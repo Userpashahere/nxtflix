@@ -29,4 +29,4 @@ Runs on http://localhost:3000
 - 404 handling for invalid movie IDs and unknown routes
 
 ## Live Demo
-[will add after deployment]
+https://nxtflix-murex.vercel.app
