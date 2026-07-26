@@ -2,20 +2,30 @@
   max-width: 1400px;
   margin: 0 auto;
   padding: 24px;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .home-hero {
   text-align: center;
-  padding: 40px 0;
+  padding: 80px 24px;
+  background-image: linear-gradient(rgba(14,14,14,0.75), rgba(14,14,14,0.95)),
+    url("https://picsum.photos/seed/nxtflixhero/1600/900");
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  margin-bottom: 24px;
 }
 
 .home-hero h1 {
+  color: #fff;
   font-size: 2.2rem;
   font-weight: 800;
   margin-bottom: 8px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.6);
 }
 
 .home-hero p {
-  color: #aaa;
+  color: #eee;
   font-size: 1rem;
 }

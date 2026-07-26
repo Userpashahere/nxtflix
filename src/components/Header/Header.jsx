@@ -14,11 +14,12 @@ const Header = () => {
 
   return (
     <header className="app-header">
-      <Link to="/" className="app-logo">
-        NXTFLIX
-      </Link>
+      <div className="app-header-inner">
+        <Link to="/" className="app-logo">
+          NXTFLIX
+        </Link>
 
-      <nav className="app-nav">
+        <nav className="app-nav">
         <Link to="/" className="app-nav-link">
           Home
         </Link>
@@ -30,10 +31,11 @@ const Header = () => {
           )}
         </Link>
 
-        <button className="logout-btn" onClick={handleLogout}>
+       <button className="logout-btn" onClick={handleLogout}>
           Logout
         </button>
-      </nav>
+        </nav>
+      </div>
     </header>
   );
 };

@@ -1,3 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: #0e0e0e;
+  color: #fff;
+}
+
 :root {
   --text: #6b6375;
   --text-h: #08060d;

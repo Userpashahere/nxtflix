@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Cookies from "js-cookie";
 import { signIn } from "../../api/auth";
@@ -10,7 +10,13 @@ const Login = () => {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(false);
 
-  const navigate = useNavigate();
+ const navigate = useNavigate();
+
+  useEffect(() => {
+    if (Cookies.get("jwt_token")) {
+      navigate("/", { replace: true });
+    }
+  }, [navigate]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

@@ -9,6 +9,16 @@
   background-color: rgba(14, 14, 14, 0.95);
   backdrop-filter: blur(6px);
   border-bottom: 1px solid #222;
+  width: 100%;
+}
+
+.app-header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .app-logo {
