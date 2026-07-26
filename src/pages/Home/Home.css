@@ -1,0 +1,21 @@
+.home-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 24px;
+}
+
+.home-hero {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.home-hero h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.home-hero p {
+  color: #aaa;
+  font-size: 1rem;
+}

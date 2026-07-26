@@ -1,0 +1,29 @@
+.genre-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+.genre-chip {
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid #444;
+  background-color: transparent;
+  color: #ccc;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.genre-chip:hover {
+  border-color: #e50914;
+  color: #fff;
+}
+
+.genre-chip.active {
+  background-color: #e50914;
+  border-color: #e50914;
+  color: #fff;
+}
