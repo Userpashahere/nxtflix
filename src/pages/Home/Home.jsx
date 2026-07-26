@@ -2,6 +2,7 @@ import { useState } from "react";
 import movies from "../../data/movies";
 import GenreFilterBar from "../../components/GenreFilterBar/GenreFilterBar";
 import MovieGrid from "../../components/MovieGrid/MovieGrid";
+import MovieCarousel from "../../components/MovieCarousel/MovieCarousel";
 import "./Home.css";
 
 const Home = () => {
@@ -12,6 +13,14 @@ const Home = () => {
       ? movies
       : movies.filter((movie) => movie.genre === activeGenre);
 
+  const trendingNow = [...movies]
+    .sort((a, b) => Number(b.rating) - Number(a.rating))
+    .slice(0, 16);
+
+  const freshReleases = movies
+    .filter((movie) => movie.year >= 2015)
+    .slice(0, 16);
+
   return (
     <div className="home-page">
       <section className="home-hero">
@@ -21,6 +30,9 @@ const Home = () => {
           Later.
         </p>
       </section>
+
+      <MovieCarousel title="Trending Now" movies={trendingNow} direction="left" />
+      <MovieCarousel title="Fresh Releases" movies={freshReleases} direction="right" />
 
       <GenreFilterBar
         activeGenre={activeGenre}
